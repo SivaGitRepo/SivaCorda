@@ -1,0 +1,15 @@
+Task 1: Adding party C in exercise cordapp:
+ 1. Add new node party C in build.gradle file in the main path
+
+Task 2: Create a API to issue money to party A, B & C in exercise cordapp:
+ 1. Add new route for issuing cash in client/src/controller
+ 2. Add corda.finance dependencies in build.gradle files in all the folders (such as main, workflows, contracts, clients).
+ 3. After adding the dependencies do an intelliJ refresh for adding the packages into the controller file
+ 4. Change the proxy to handle transactions for different parties. This involves adding autowire for party proxies, creating     AppConfig file and the application.yaml file which contains the beans and party proxy details/host details
+ 5. Add new route for getting cash balance with proxy switching logic
+
+Task 3: Create a new workflow in auction app. The cash transfer has to happen after the IOU state is created:
+ 1. Add logic in angular-module file initiate IOU flow when pay and settle gets triggered
+ 2. Add new route for creating IOU in client/src/controller
+ 3. Add new workflow initiator for initiating the IOU flow
+ 4. The inititor will create the IOU and initiate the finality flow (needed for writing transaction to ledger)

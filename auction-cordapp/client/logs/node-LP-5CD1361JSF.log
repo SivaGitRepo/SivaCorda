@@ -1,0 +1,99 @@
+[INFO ] 2023-04-27T06:26:22,880 [restartedMain] Starter - Starting Starter on LP-5CD1361JSF with PID 19664 (C:\Karthik\Workspace\training\auction-cordapp.tar\auction-cordapp\auction-cordapp\client\build\classes\java\main started by karthik.sukumaran in C:\Karthik\Workspace\training\auction-cordapp.tar\auction-cordapp\auction-cordapp\client)
+[INFO ] 2023-04-27T06:26:22,884 [restartedMain] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2023-04-27T06:26:22,927 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@125e296c: startup date [Thu Apr 27 11:56:22 IST 2023]; root of context hierarchy
+[INFO ] 2023-04-27T06:26:24,817 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+[INFO ] 2023-04-27T06:26:24,834 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+[INFO ] 2023-04-27T06:26:24,846 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2023-04-27T06:26:24,847 [restartedMain] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-04-27T06:26:24,857 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\CCM;C:\Program Files\Git\cmd;C:\Users\karthik.sukumaran\AppData\Local\Microsoft\WindowsApps;C:\Users\karthik.sukumaran\OneDrive - HCL Technologies Ltd\Softwares\VSCode-win32-x64-1.74.1;;.]
+[INFO ] 2023-04-27T06:26:25,886 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-04-27T06:26:25,886 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2963 ms
+[INFO ] 2023-04-27T06:26:26,182 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-04-27T06:26:26,188 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-04-27T06:26:26,189 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-04-27T06:26:26,189 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-04-27T06:26:26,189 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-04-27T06:26:32,137 [restartedMain] RPCClient - Startup took 1966 msec
+[INFO ] 2023-04-27T06:26:32,260 [restartedMain] RPCClient - Startup took 112 msec
+[INFO ] 2023-04-27T06:26:32,442 [restartedMain] RPCClient - Startup took 179 msec
+[INFO ] 2023-04-27T06:26:32,588 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-04-27T06:26:32,775 [restartedMain] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@125e296c: startup date [Thu Apr 27 11:56:22 IST 2023]; root of context hierarchy
+[INFO ] 2023-04-27T06:26:32,916 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/placeBid],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.placeBid(net.corda.samples.auction.client.Forms$BidForm)
+[INFO ] 2023-04-27T06:26:32,919 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/switch-party/{party}],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Long> net.corda.samples.auction.client.Controller.switchParty(java.lang.String)
+[INFO ] 2023-04-27T06:26:32,920 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/list],methods=[GET]}" onto public net.corda.samples.auction.client.APIResponse<java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.auction.states.AuctionState>>> net.corda.samples.auction.client.Controller.getAuctionList()
+[INFO ] 2023-04-27T06:26:32,920 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/asset/create],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.createAsset(net.corda.samples.auction.client.Forms$AssetForm)
+[INFO ] 2023-04-27T06:26:32,921 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/asset/list],methods=[GET]}" onto public net.corda.samples.auction.client.APIResponse<java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.auction.states.Asset>>> net.corda.samples.auction.client.Controller.getAssetList()
+[INFO ] 2023-04-27T06:26:32,922 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/payAndSettle],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.payAndSettle(net.corda.samples.auction.client.Forms$SettlementForm)
+[INFO ] 2023-04-27T06:26:32,922 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/getCashBalance],methods=[GET]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Long> net.corda.samples.auction.client.Controller.getCashBalance()
+[INFO ] 2023-04-27T06:26:32,923 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/delete/{auctionId}],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.deleteAuction(java.lang.String)
+[INFO ] 2023-04-27T06:26:32,925 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/setup],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.setupDemoData()
+[INFO ] 2023-04-27T06:26:32,926 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/create],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.createAuction(net.corda.samples.auction.client.Forms$CreateAuctionForm)
+[INFO ] 2023-04-27T06:26:32,927 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/issueCash],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.issueCash(net.corda.samples.auction.client.Forms$IssueCashForm)
+[INFO ] 2023-04-27T06:26:32,932 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-04-27T06:26:32,935 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-04-27T06:26:32,985 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-04-27T06:26:32,986 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-04-27T06:26:33,078 [restartedMain] WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2023-04-27T06:26:33,542 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2023-04-27T06:26:33,588 [restartedMain] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-04-27T06:26:33,603 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+[INFO ] 2023-04-27T06:26:33,631 [restartedMain] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-04-27T06:26:33,689 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+[INFO ] 2023-04-27T06:26:33,695 [restartedMain] Starter - Started Starter in 12.481 seconds (JVM running for 15.765)
+[INFO ] 2023-04-27T06:28:08,898 [http-nio-8085-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-04-27T06:28:08,899 [http-nio-8085-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-04-27T06:28:08,950 [http-nio-8085-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+[WARN ] 2023-04-27T08:54:31,355 [Thread-2 (ActiveMQ-client-factory-threads-769816488)] RPCClientProxyHandler - Terminating observables.
+[WARN ] 2023-04-27T08:54:31,825 [Thread-2 (ActiveMQ-client-factory-threads-1991460130)] RPCClientProxyHandler - Terminating observables.
+[INFO ] 2023-04-27T08:54:31,964 [Thread-2 (ActiveMQ-client-factory-threads-769816488)] RPCClientProxyHandler - RPC server available.
+[WARN ] 2023-04-27T08:54:32,118 [Thread-2 (ActiveMQ-client-factory-threads-192580295)] RPCClientProxyHandler - Terminating observables.
+[INFO ] 2023-04-27T08:54:32,353 [Thread-2 (ActiveMQ-client-factory-threads-1991460130)] RPCClientProxyHandler - RPC server available.
+[INFO ] 2023-04-27T08:54:32,605 [Thread-2 (ActiveMQ-client-factory-threads-192580295)] RPCClientProxyHandler - RPC server available.
+[WARN ] 2023-04-27T08:54:41,784 [Thread-2 (ActiveMQ-client-factory-threads-1991460130)] RPCClientProxyHandler - Terminating observables.
+[WARN ] 2023-04-27T08:54:41,801 [Thread-2 (ActiveMQ-client-factory-threads-192580295)] RPCClientProxyHandler - Terminating observables.
+[WARN ] 2023-04-27T08:54:42,895 [Thread-2 (ActiveMQ-client-factory-threads-769816488)] RPCClientProxyHandler - Terminating observables.
+[INFO ] 2023-04-27T09:00:11,861 [restartedMain] Starter - Starting Starter on LP-5CD1361JSF with PID 15464 (C:\Karthik\Workspace\training\auction-cordapp.tar\auction-cordapp\auction-cordapp\client\build\classes\java\main started by karthik.sukumaran in C:\Karthik\Workspace\training\auction-cordapp.tar\auction-cordapp\auction-cordapp\client)
+[INFO ] 2023-04-27T09:00:11,868 [restartedMain] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2023-04-27T09:00:11,918 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57df88eb: startup date [Thu Apr 27 14:30:11 IST 2023]; root of context hierarchy
+[INFO ] 2023-04-27T09:00:14,024 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+[INFO ] 2023-04-27T09:00:14,043 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+[INFO ] 2023-04-27T09:00:14,057 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2023-04-27T09:00:14,057 [restartedMain] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-04-27T09:00:14,071 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\CCM;C:\Program Files\Git\cmd;C:\Users\karthik.sukumaran\AppData\Local\Microsoft\WindowsApps;C:\Users\karthik.sukumaran\OneDrive - HCL Technologies Ltd\Softwares\VSCode-win32-x64-1.74.1;;.]
+[INFO ] 2023-04-27T09:00:15,204 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-04-27T09:00:15,205 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3292 ms
+[INFO ] 2023-04-27T09:00:15,487 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-04-27T09:00:15,492 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-04-27T09:00:15,492 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-04-27T09:00:15,493 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-04-27T09:00:15,493 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-04-27T09:00:22,213 [restartedMain] RPCClient - Startup took 1829 msec
+[INFO ] 2023-04-27T09:00:22,401 [restartedMain] RPCClient - Startup took 173 msec
+[INFO ] 2023-04-27T09:00:22,514 [restartedMain] RPCClient - Startup took 111 msec
+[INFO ] 2023-04-27T09:00:22,670 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-04-27T09:00:22,854 [restartedMain] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57df88eb: startup date [Thu Apr 27 14:30:11 IST 2023]; root of context hierarchy
+[INFO ] 2023-04-27T09:00:22,996 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/create],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.createAuction(net.corda.samples.auction.client.Forms$CreateAuctionForm)
+[INFO ] 2023-04-27T09:00:23,000 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/switch-party/{party}],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Long> net.corda.samples.auction.client.Controller.switchParty(java.lang.String)
+[INFO ] 2023-04-27T09:00:23,000 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/payAndSettle],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.payAndSettle(net.corda.samples.auction.client.Forms$SettlementForm)
+[INFO ] 2023-04-27T09:00:23,001 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/setup],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.setupDemoData()
+[INFO ] 2023-04-27T09:00:23,001 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/asset/create],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.createAsset(net.corda.samples.auction.client.Forms$AssetForm)
+[INFO ] 2023-04-27T09:00:23,002 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/placeBid],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.placeBid(net.corda.samples.auction.client.Forms$BidForm)
+[INFO ] 2023-04-27T09:00:23,003 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/asset/list],methods=[GET]}" onto public net.corda.samples.auction.client.APIResponse<java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.auction.states.Asset>>> net.corda.samples.auction.client.Controller.getAssetList()
+[INFO ] 2023-04-27T09:00:23,004 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/list],methods=[GET]}" onto public net.corda.samples.auction.client.APIResponse<java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.auction.states.AuctionState>>> net.corda.samples.auction.client.Controller.getAuctionList()
+[INFO ] 2023-04-27T09:00:23,005 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/issueCash],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.issueCash(net.corda.samples.auction.client.Forms$IssueCashForm)
+[INFO ] 2023-04-27T09:00:23,005 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/getCashBalance],methods=[GET]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Long> net.corda.samples.auction.client.Controller.getCashBalance()
+[INFO ] 2023-04-27T09:00:23,006 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/api/auction/delete/{auctionId}],methods=[POST]}" onto public net.corda.samples.auction.client.APIResponse<java.lang.Void> net.corda.samples.auction.client.Controller.deleteAuction(java.lang.String)
+[INFO ] 2023-04-27T09:00:23,010 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-04-27T09:00:23,011 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-04-27T09:00:23,050 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-04-27T09:00:23,051 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-04-27T09:00:23,123 [restartedMain] WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2023-04-27T09:00:23,535 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2023-04-27T09:00:23,586 [restartedMain] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-04-27T09:00:23,605 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+[INFO ] 2023-04-27T09:00:23,634 [restartedMain] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-04-27T09:00:23,702 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+[INFO ] 2023-04-27T09:00:23,711 [restartedMain] Starter - Started Starter in 13.727 seconds (JVM running for 16.79)
+[INFO ] 2023-04-27T09:00:45,996 [http-nio-8085-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-04-27T09:00:45,996 [http-nio-8085-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-04-27T09:00:46,039 [http-nio-8085-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms

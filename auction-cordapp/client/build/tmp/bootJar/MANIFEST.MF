@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Start-Class: net.corda.samples.auction.client.Starter
+Main-Class: org.springframework.boot.loader.JarLauncher
+

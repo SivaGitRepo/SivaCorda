@@ -1,0 +1,3 @@
+https://software.r3.com/ui/native/corda/co/paralleluniverse/quasar-core/0.7.15_r3
+
+C:\Users\Siva S\Corda R3\cordapp-example\build\nodes\.cache\apps\net.corda.node.Corda_4.10\quasar-core-0.7.15_r3.jar

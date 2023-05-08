@@ -1,0 +1,18 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/Siva%20S/Corda%20R3/auction-cordapp/build/nodes/.cache/apps/net.corda.node.Corda_4.10/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/Siva%20S/Corda%20R3/auction-cordapp/build/nodes/Notary/drivers/corda-shell-4.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+   ______               __
+  / ____/     _________/ /___ _
+ / /     __  / ___/ __  / __ `/         You know, I was a banker
+/ /___  /_/ / /  / /_/ / /_/ /          once ... but I lost interest. 
+\____/     /_/   \__,_/\__,_/
+
+--- Corda Community Edition 4.10 (fa98aa7) -------------------------------------------------------------
+
+
+Logs can be found in                    : C:\Users\Siva S\Corda R3\auction-cordapp\build\nodes\Notary\logs
+Running database schema migration scripts ...
+Database migration scripts for core and app schemas complete. There are no outstanding database changes.
